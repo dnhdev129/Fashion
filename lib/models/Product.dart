@@ -1,22 +1,26 @@
 class Product {
   final String? image, title, description;
   final int price, size, id;
-  Product(
-      {required this.image,
-      required this.title,
-      this.price = 0,
-      required this.description,
-      required this.size,
-      this.id = 0});
+  int quantity; // Thêm thuộc tính số lượng
+
+  Product({
+    required this.image,
+    required this.title,
+    required this.description,
+    required this.price,
+    required this.size,
+    this.id = 0,
+    this.quantity = 1, // Khởi tạo số lượng mặc định là 1
+  });
 }
 
 List<Product> products = [
   Product(
     id: 1,
-    title: "Office Code",
-    price: 234,
+    title: "Office Bag",
+    price: 299,
     size: 12,
-    description: dummyText,
+    description: "Chiếc túi văn phòng tiện lợi, thiết kế hiện đại.",
     image: "assets/images/bag_1.png",
   ),
   Product(
@@ -24,7 +28,7 @@ List<Product> products = [
     title: "Belt Bag",
     price: 234,
     size: 8,
-    description: dummyText,
+    description: "Túi đeo chéo thời trang với phong cách trẻ trung.",
     image: "assets/images/bag_2.png",
   ),
   Product(
@@ -32,7 +36,7 @@ List<Product> products = [
     title: "Hang Top",
     price: 234,
     size: 10,
-    description: dummyText,
+    description: "Túi xách tay nữ sang trọng, chất liệu da cao cấp.",
     image: "assets/images/bag_3.png",
   ),
   Product(
@@ -40,7 +44,7 @@ List<Product> products = [
     title: "Old Fashion",
     price: 234,
     size: 11,
-    description: dummyText,
+    description: "Phong cách cổ điển, dành cho người thích sự hoài cổ.",
     image: "assets/images/bag_4.png",
   ),
   Product(
@@ -48,7 +52,7 @@ List<Product> products = [
     title: "Office Code",
     price: 234,
     size: 12,
-    description: dummyText,
+    description: "Sự kết hợp giữa tiện ích và thời trang công sở.",
     image: "assets/images/bag_5.png",
   ),
   Product(
@@ -56,7 +60,7 @@ List<Product> products = [
     title: "Office Code",
     price: 234,
     size: 12,
-    description: dummyText,
+    description: "Một chiếc túi tuyệt vời cho dân công sở.",
     image: "assets/images/bag_6.png",
   ),
   Product(
@@ -64,7 +68,7 @@ List<Product> products = [
     title: "Túi vải bố",
     price: 234,
     size: 12,
-    description: dummyText,
+    description: "Chất liệu vải bố bền đẹp, thân thiện với môi trường.",
     image: "assets/images/bag7.jpg",
   ),
   Product(
@@ -72,7 +76,7 @@ List<Product> products = [
     title: "Túi vải",
     price: 234,
     size: 12,
-    description: dummyText,
+    description: "Túi vải đa năng, phù hợp cho mọi dịp.",
     image: "assets/images/bag8.jpg",
   ),
   Product(
@@ -80,7 +84,7 @@ List<Product> products = [
     title: "Túi đeo nữ Venu",
     price: 234,
     size: 12,
-    description: dummyText,
+    description: "Túi đeo nữ phong cách thời trang, hiện đại.",
     image: "assets/images/bag_9.png",
   ),
   Product(
@@ -88,7 +92,7 @@ List<Product> products = [
     title: "Túi đeo nữ Xì trum",
     price: 234,
     size: 12,
-    description: dummyText,
+    description: "Sản phẩm chất lượng cao, phong cách dễ thương.",
     image: "assets/images/bag_10.png",
   ),
   Product(
@@ -96,7 +100,7 @@ List<Product> products = [
     title: "Túi đeo nữ Việt Tiến",
     price: 234,
     size: 12,
-    description: dummyText,
+    description: "Sản phẩm nội địa với thiết kế thanh lịch.",
     image: "assets/images/bag_11.png",
   ),
   Product(
@@ -104,7 +108,7 @@ List<Product> products = [
     title: "Túi đeo nữ Coop",
     price: 234,
     size: 12,
-    description: dummyText,
+    description: "Thiết kế đơn giản nhưng không kém phần tinh tế.",
     image: "assets/images/bag_12.png",
   ),
 ];

@@ -49,7 +49,7 @@ List<Product> products = [
   ),
   Product(
     id: 5,
-    title: "Office Code",
+    title: "Office Bag",
     price: 234,
     size: 12,
     description: "Sự kết hợp giữa tiện ích và thời trang công sở.",
@@ -57,7 +57,7 @@ List<Product> products = [
   ),
   Product(
     id: 6,
-    title: "Office Code",
+    title: "Office Bag",
     price: 234,
     size: 12,
     description: "Một chiếc túi tuyệt vời cho dân công sở.",

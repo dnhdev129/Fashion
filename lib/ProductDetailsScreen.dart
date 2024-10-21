@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test1/models/Cart.dart';
+import 'models/Cart.dart';
 import 'models/Product.dart';
 
 class ProductDetailsScreen extends StatelessWidget {
@@ -46,7 +46,7 @@ class ProductDetailsScreen extends StatelessWidget {
               ),
               SizedBox(height: 20),
               Text(
-                "Description:",
+                "Mô Tả:",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 10),
@@ -56,7 +56,7 @@ class ProductDetailsScreen extends StatelessWidget {
               ),
               SizedBox(height: 30),
               Text(
-                "Related Products:",
+                "Sản Phẩm Liên Quan:",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 10),

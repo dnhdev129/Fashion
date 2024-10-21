@@ -74,7 +74,7 @@ class _CartScreenState extends State<CartScreen> {
                             ScaffoldMessenger.of(context).showSnackBar(
                               SnackBar(
                                 content:
-                                    Text('${product.title} removed from cart'),
+                                    Text('${product.title} Đã Xóa Khỏi Giỏ'),
                               ),
                             );
                           },
@@ -96,9 +96,9 @@ class _CartScreenState extends State<CartScreen> {
                       ElevatedButton(
                         onPressed: () {
                           // Xử lý khi nhấn nút thanh toán
-                          print("Proceed to Checkout");
+                          print("Thanh Toán Thành Công");
                         },
-                        child: Text('Checkout'),
+                        child: Text('Thanh toán'),
                       ),
                     ],
                   ),

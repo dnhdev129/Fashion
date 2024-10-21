@@ -111,6 +111,14 @@ List<Product> products = [
     description: "Thiết kế đơn giản nhưng không kém phần tinh tế.",
     image: "assets/images/bag_12.png",
   ),
+  Product(
+    id: 13,
+    title: "Túi đeo chéo xx",
+    price: 235,
+    size: 10,
+    description: "Thiết kế đơn giản nhưng không kém phần tinh tế.",
+    image: "assets/images/default_image.png",
+  ),
 ];
 
 String dummyText = "Đây là sản phẩm tuyệt vời. Không thể tin được";

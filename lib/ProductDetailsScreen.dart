@@ -139,7 +139,7 @@ class ProductDetailsScreen extends StatelessWidget {
                     );
                   },
                   icon: Icon(Icons.add_shopping_cart),
-                  label: Text("Add to Cart"),
+                  label: Text("Thêm Vào Giỏ Hàng"),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue,
                     foregroundColor: Colors.white,

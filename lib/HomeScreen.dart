@@ -5,9 +5,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Home')),
-      body: Center(
-        child: Text('Welcome to Home Screen'),
-      ),
+      body: Center(child: Text('Chào mừng bạn đến với ứng dụng!')),
     );
   }
 }

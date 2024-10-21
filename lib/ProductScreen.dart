@@ -37,7 +37,7 @@ class _ProductScreenState extends State<ProductScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Products'),
+        title: Text('Sản Phẩm'),
         bottom: PreferredSize(
           preferredSize: Size.fromHeight(60),
           child: Padding(
